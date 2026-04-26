@@ -52,7 +52,7 @@ async def alive_function(message: Message, answers):
     msg = f"""
 <b> — Hey, I am alive.</b>
 
-<b> • 𝗔𝗟𝗣𝗛𝗔 :</b> {message.from_user.mention}
+<b> • killua :</b> {message.from_user.mention}
 <b> • Plugins :</b> <code>{len(CMD_HELP)} Modules</code>
 <b> • Python Version :</b> <code>{pyver.split()[0]}</code>
 <b> • Pyrogram Version :</b> <code>{pyrover}</code>
@@ -69,7 +69,7 @@ async def alive_function(message: Message, answers):
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("──「 𝗔𝗟𝗣𝗛𝗔-𝗕𝗔𝗕𝗬 」──", callback_data="helper")]]
+                [[InlineKeyboardButton("──「 -𝗕𝗔𝗕𝗬 」──", callback_data="helper")]]
             ),
         )
     )
@@ -82,7 +82,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://graph.org/file/3d2a5e4462b7703c949dc.jpg",
+            thumb_url="https://files.catbox.moe/om20d5.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),
