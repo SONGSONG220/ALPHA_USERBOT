@@ -18,7 +18,7 @@ ALIVE_TEXT = getenv("ALIVE_TEXT", "🤖 I am Alive!")
 PM_LOGGER = getenv("PM_LOGGER", "-1003812233808")
 LOG_GROUP = getenv("LOG_GROUP", "-1003812233808")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
-REPO_URL = getenv("REPO_URL", "https://github.com/TEAMPURVI/ALPHA_USERBOT")
+REPO_URL = getenv("REPO_URL", "https://github.com/SONGSONG220/ALPHA_USERBOT")
 BRANCH = getenv("BRANCH", "main")
 
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
