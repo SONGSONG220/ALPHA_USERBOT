@@ -6,21 +6,21 @@ if os.path.exists("local.env"):
     load_dotenv("local.env")
 
 
-API_ID = int(getenv("API_ID", "27079591")) #optional
-API_HASH = getenv("API_HASH", "c81ae4c3dc026ea4bf49842a8ce4a5f9") #optional
+API_ID = int(getenv("API_ID", "12345678"))
+API_HASH = getenv("API_HASH", "abcdef1234567890abcdef1234567890")
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "7403621976").split()))
-OWNER_ID = int(getenv("OWNER_ID"))
-MONGO_URL = getenv("MONGO_URL")
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "9876543210").split()))
+OWNER_ID = int(getenv("OWNER_ID", "9876543210"))
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://username:password@cluster0.example.mongodb.net/mydb")
+BOT_TOKEN = getenv("BOT_TOKEN", "123456789:AAFxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 ALIVE_PIC = getenv("ALIVE_PIC", 'https://telegra.ph/file/5badd2112e1e0cdf03a1f.jpg')
-ALIVE_TEXT = getenv("ALIVE_TEXT")
-PM_LOGGER = getenv("PM_LOGGER")
-LOG_GROUP = getenv("LOG_GROUP")
-GIT_TOKEN = getenv("GIT_TOKEN") #personal access token
+ALIVE_TEXT = getenv("ALIVE_TEXT", "🤖 I am Alive!")
+PM_LOGGER = getenv("PM_LOGGER", "-1001234567890")
+LOG_GROUP = getenv("LOG_GROUP", "-1001234567890")
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 REPO_URL = getenv("REPO_URL", "https://github.com/TEAMPURVI/ALPHA_USERBOT")
-BRANCH = getenv("BRANCH", "main") #don't change
- 
+BRANCH = getenv("BRANCH", "main")
+
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
